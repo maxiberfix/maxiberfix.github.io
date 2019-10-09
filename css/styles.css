@@ -1,0 +1,56 @@
+.top-nav-collapse {
+  background-color: rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+  .logo{
+      text-align: center;
+  }
+  .button-icon{
+    float: right;
+  }
+  .container #collapse-content{
+    clear: right;
+    float: inherit;
+
+
+  }
+
+  .container .navbar-list{
+    border-top: groove;
+    flex-direction: row-reverse;
+    float: inherit;
+    place-content: space-evenly;
+
+  }
+}
+.top-nav-collapse #navbutton{
+  /*background-color: black;*/
+  color: rgb(97, 96, 96);
+}
+
+#header-nav .container{
+  width: 90%;
+}
+#collapse-content{
+  float: right;
+}
+collapse-button{
+  float: right;
+}
+
+/*#header-nav {
+  padding: 0px 0px 0px 0px;
+  block-size: 80px;
+}*/
+
+.nav-item{
+  vertical-align: middle;
+}
+
+.navbar-list{
+  list-style-type: none; /* saco los puntos */
+  margin: 0;  /* reconfigurar los margenes y padding que estan por default en el navegador*/
+  padding: 0;
+  float: right;
+
+}

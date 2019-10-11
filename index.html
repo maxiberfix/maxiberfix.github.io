@@ -23,14 +23,14 @@ class = "view"
   <header>
     <!--Navbar-->
     <nav id=header-nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
-      <div class="container-fluid">
-        <div class="container logo">
+      <div class="container">                     <!-- antes era container-fluid -->
+        <!-- <div class="container logo"> -->
           <!-- logo empresa -->
-          <a class="navbar-brand " href="#">
+          <a class="navbar-brand" href="#">
             <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
           </a>
           <!-- Collapse Button -->
-          <button class="navbar-toggler collapse-button button-icon" type="button" data-toggle="collapse" data-target="#collapse-content" aria-controls="colapse-content" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapse-button button-icon" type="button" data-toggle="collapse" data-target="#collapse-content" aria-controls="collapse-content" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Collapsibe content -->
@@ -38,7 +38,7 @@ class = "view"
 
 
             <!-- lista de botones -->
-            <ul class="navbar-nav navbar-list">
+            <ul class="navbar-nav navbar-list ml-auto">
               <li class="nav-item">
                 <a id="navbutton" class="nav-link" href="#home">Home</a>
               </li>
@@ -49,13 +49,13 @@ class = "view"
                 <a id="navbutton" class="nav-link" href="#customers">Customers</a>
               </li>
               <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#about"><span>About Us</span></a>
+                <a id="navbutton" class="nav-link" href="#about"><span>About Us</span></a> <!-- Se agrega el span para que no haga line break -->
               </li>
               <li class="nav-item">
                 <a id="navbutton" class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
           <!-- Links -->
         </div>
         <!-- Collapsible content -->
@@ -63,12 +63,81 @@ class = "view"
       </div>
     </nav>
     <!--/.Navbar-->
-
   </header>
   <main>
-    <div id="main-content" class="no-padding">
-      <img src="img/svosvehicles.jpg" alt="Picture of restaurant" class="img-responsive visible-xs w-100 main-image">
-    </div><!-- End of #main-content -->
+
+    
+    <!--Carousel Wrapper-->
+  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-main" data-slide-to="1"></li>
+      <li data-target="#carousel-main" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="/img/svosvehicles.jpg"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div id="carousel-cap" class="carousel-caption">
+            <h1 class="h1-responsive">Military grade vehicles</h1>
+            <p style="font-size: 24px;">For the toughest situations</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/vera.jpg"
+            alt="Second slide">
+            <!-- si cambiamos el min-vh-100 por vh-100 nos deja achicar mas la altura de la pantalla mientras sigue siendo responsive -->
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div id="carousel-cap" class="carousel-caption">
+          <h1 class="h1-responsive">Cutting-edge radar technology</h1>
+          <p style="font-size: 24px;">Your eyes on the air</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/ripsaw.jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div id="carousel-cap" class="carousel-caption">
+          <h1 class="h1-responsive">RIPSAW</h1>
+          <p style="font-size: 24px;">The most versatile option</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+    
+ 
+
+  
+  <!-- <div id="main-content" class="no-padding"> -->
+    <!-- <img src="img/svosvehicles.jpg" alt="Picture of restaurant" class="img-responsive visible-xs w-100 main-image"> -->
+  <!-- </div> -->
+  <!-- End of #main-content -->
+
+
   </main>
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2019.

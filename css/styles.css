@@ -2,9 +2,6 @@
   background-color: rgb(255, 255, 255);
 }
 @media (max-width: 767px) {
-  .logo{
-      text-align: center;
-  }
   .button-icon{
     float: right;
   }
@@ -14,17 +11,24 @@
 
 
   }
-
   .container .navbar-list{
     border-top: groove;
-    flex-direction: row-reverse;
+    flex-direction: row;
     float: inherit;
     place-content: space-evenly;
 
   }
 }
+
+.container .navbar-brand{
+  margin: auto;
+}
+
+.navbar .navbar-toggler {
+  border-width: 3px;
+}
+
 .top-nav-collapse #navbutton{
-  /*background-color: black;*/
   color: rgb(97, 96, 96);
 }
 
@@ -53,4 +57,23 @@ collapse-button{
   padding: 0;
   float: right;
 
+}
+
+#main-content {
+  padding: 0;
+  margin: 0;
+}
+
+/* Carousel */
+
+#carousel-img {
+  size: 100vw;
+}
+
+#carousel-cap {
+  bottom: 30%;
+}
+
+.h1-responsive{
+  font-weight: 300;
 }

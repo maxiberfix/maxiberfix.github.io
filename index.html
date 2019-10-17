@@ -38,7 +38,7 @@ class = "view"
 
 
             <!-- lista de botones -->
-            <ul class="navbar-nav navbar-list ml-auto">
+            <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
               <li class="nav-item">
                 <a id="navbutton" class="nav-link" href="#home">Home</a>
               </li>
@@ -66,9 +66,8 @@ class = "view"
   </header>
   <main>
 
-    
     <!--Carousel Wrapper-->
-  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel">
+  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="true">
     <!--Indicators-->
     <ol class="carousel-indicators">
       <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
@@ -80,38 +79,41 @@ class = "view"
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <div class="view">
-          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="/img/svosvehicles.jpg"
+          <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
+          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="/img/svosvehicles.jpg"
             alt="First slide">
-          <div class="mask rgba-black-light"></div>
+          <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-            <h1 class="h1-responsive">Military grade vehicles</h1>
+            <h1 class="h1-responsive">Military forces equipment</h1>
             <p style="font-size: 24px;">For the toughest situations</p>
           </div>
       </div>
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/vera.jpg"
+          <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
+          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/vera.jpg"
             alt="Second slide">
-            <!-- si cambiamos el min-vh-100 por vh-100 nos deja achicar mas la altura de la pantalla mientras sigue siendo responsive -->
-          <div class="mask rgba-black-light"></div>
+             si cambiamos el min-vh-100 por vh-100 nos deja achicar mas la altura de la pantalla mientras sigue siendo responsive--
+          <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
           <h1 class="h1-responsive">Cutting-edge radar technology</h1>
-          <p style="font-size: 24px;">Your eyes on the air</p>
+          <p style="font-size: 24px;">Everything under control</p>
         </div>
       </div>
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-          <img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/ripsaw.jpg"
+            <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
+          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/ripsaw.jpg"
             alt="Third slide">
-          <div class="mask rgba-black-light"></div>
+          <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-          <h1 class="h1-responsive">RIPSAW</h1>
-          <p style="font-size: 24px;">The most versatile option</p>
+          <h1 class="h1-responsive">Air-defense systems</h1>
+          <p style="font-size: 24px;">The most versatile options</p>
         </div>
       </div>
     </div>
@@ -155,6 +157,8 @@ class = "view"
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Iberfix core JavaScript -->
+  <script type="text/javascript" src="js/iberfix.js"></script>
 </body>
 
 </html>

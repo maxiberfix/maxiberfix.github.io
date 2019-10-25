@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
@@ -22,39 +23,43 @@ class = "view"
 <body>
   <header>
     <!--Navbar-->
-    <nav id=header-nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
-      <div class="container">                     <!-- antes era container-fluid -->
-        <!-- <div class="container logo"> -->
-          <!-- logo empresa -->
-          <a class="navbar-brand" href="#">
-            <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
-          </a>
-          <!-- Collapse Button -->
-          <button class="navbar-toggler collapse-button button-icon" type="button" data-toggle="collapse" data-target="#collapse-content" aria-controls="collapse-content" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collapsibe content -->
-          <div class="collapse navbar-collapse" id="collapse-content">
-
-
-            <!-- lista de botones -->
-            <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
-              <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#customers">Customers</a>
-              </li>
-              <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#about"><span>About Us</span></a> <!-- Se agrega el span para que no haga line break -->
-              </li>
-              <li class="nav-item">
-                <a id="navbutton" class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+    <nav id="header-nav" class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
+      <div class="container">
+        <!-- logo empresa -->
+        <a class="navbar-brand" href="#carousel-main">
+          <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
+        </a>
+        <!-- Collapse Button -->
+        <button id="btton" class="waves-light navbar-toggler collapse-button button-icon" type="button" data-toggle="collapse" data-target="#collapse-content" aria-controls="collapse-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="toggler-icon" class="fas fa-bars"></span>
+        </button>
+        <!-- Collapsibe content -->
+        <div class="collapse navbar-collapse" id="collapse-content">
+          <!-- lista de botones -->
+          <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
+            <li class="nav-item">
+              <a id="navbutton" class="nav-link rounded" href="#carousel-main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbutton" class="nav-link rounded" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbutton" class="nav-link rounded" href="#customers">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbutton" class="nav-link rounded" href="#about"><span style="white-space: nowrap">About Us</span></a> <!-- Se agrega el span para que no haga line break -->
+            </li>
+            <li class="nav-item">
+              <a id="navbutton" class="nav-link rounded" href="#contact">Contact</a>
+            </li>
+            <li id="btton" class="nav-item">
+              <a id="navbutton" class="nav-link dropdown-toggle ml-auto waves-light rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> En</a>
+              <div class="es-button dropdown-menu rgba-white-slight" >
+                <a id="navbutton" class="dropdown-item" href="#es">
+                  <span class="flag-icon flag-icon-es" ></span>
+                  Es</a>
+            </li>
+          </ul>
           <!-- </div> -->
           <!-- Links -->
         </div>
@@ -64,88 +69,321 @@ class = "view"
     </nav>
     <!--/.Navbar-->
   </header>
-  <main>
-
+  
     <!--Carousel Wrapper-->
-  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="true">
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-main" data-slide-to="1"></li>
-      <li data-target="#carousel-main" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="view">
-          <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
-          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="/img/svosvehicles.jpg"
+    <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="true">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-main" data-slide-to="1"></li>
+        <li data-target="#carousel-main" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
+            <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="/img/svosvehicles.jpg"
             alt="First slide">
-          <div class="mask rgba-black-light"></div>-->
-        </div>
-        <div id="carousel-cap" class="carousel-caption">
+            <div class="mask rgba-black-light"></div>-->
+          </div>
+          <div id="carousel-cap" class="carousel-caption wow fadeIn slow">
             <h1 class="h1-responsive">Military forces equipment</h1>
             <p style="font-size: 24px;">For the toughest situations</p>
           </div>
-      </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
-          <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
-          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/vera.jpg"
-            alt="Second slide">
-             si cambiamos el min-vh-100 por vh-100 nos deja achicar mas la altura de la pantalla mientras sigue siendo responsive--
-          <div class="mask rgba-black-light"></div>-->
         </div>
-        <div id="carousel-cap" class="carousel-caption">
-          <h1 class="h1-responsive">Cutting-edge radar technology</h1>
-          <p style="font-size: 24px;">Everything under control</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <!--Mask color-->
-        <div class="view">
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
             <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
-          <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/ripsaw.jpg"
-            alt="Third slide">
-          <div class="mask rgba-black-light"></div>-->
+            <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/vera.jpg"
+            alt="Second slide">
+            si cambiamos el min-vh-100 por vh-100 nos deja achicar mas la altura de la pantalla mientras sigue siendo responsive--
+            <div class="mask rgba-black-light"></div>-->
+          </div>
+          <div id="carousel-cap" class="carousel-caption">
+            <h1 class="h1-responsive">Cutting-edge radar technology</h1>
+            <p style="font-size: 24px;">Everything under control</p>
+          </div>
         </div>
-        <div id="carousel-cap" class="carousel-caption">
-          <h1 class="h1-responsive">Air-defense systems</h1>
-          <p style="font-size: 24px;">The most versatile options</p>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <div class="full-bg-img flex-center mask rgba-black-light img-gradient"></div>
+            <!--<img id="carousel-img" class="d-block vh-100 min-vw-100" src="img/ripsaw.jpg"
+            alt="Third slide">
+            <div class="mask rgba-black-light"></div>-->
+          </div>
+          <div id="carousel-cap" class="carousel-caption">
+            <h1 class="h1-responsive">Air-defense systems</h1>
+            <p style="font-size: 24px;">The most versatile options</p>
+          </div>
         </div>
       </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
     </div>
-    <!--/.Slides-->
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-  </div>
-  <!--/.Carousel Wrapper-->
+    <!--/.Carousel Wrapper-->
+    <main id="home">
     
- 
+    <!-- product categories -->
+    <section class="mt-5" id="prod-cat">
+        <!-- Heading -->
+        <h1 class="h1-responsive text-center wow fadeInUp">Product categories</h1>
+          <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
+          <div class="row mt-5 mb-5 ml-4 mr-4 wow fadeIn">
+            <!-- primera columna -->
+            <div class="col-md-3">
+                <div class="cat-img mb-4">
+                    <img class="d-block rounded-circle" src="/img/policia.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
+                </div>
+                <h2 class="h4-responsive text-center">
+                    Public safety
+                </h2>
+                <p class="text-center">
+                  Equipment for law enforcement
+                  and high risk urban missions.
+                </p>
+            </div>
+            <!-- /primera columna-->
+            <!-- segunda columna -->
+            <div class="col-md-3">
+                <div class="cat-img mb-4">
+                    <img class="d-block rounded-circle" src="/img/soldiers-city.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
+                </div>
+                <h2 class="h4-responsive text-center">
+                    Military equipment
+                </h2>
+                <p class="text-center">
+                    Top-notch equipment for the toughest situations.
+                  </p>
+            </div>
+            <!-- /segunda columna-->
+            <!-- tercera columna -->
+            <div class="col-md-3">
+                <div class="cat-img mb-4">
+                    <img class="d-block rounded-circle" src="/img/biohazard.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
+                </div>
+                <h2 class="h4-responsive text-center">
+                    Biohazard control
+                </h2>
+                <p class="text-center">
+                    When life is at risk, you have to protect your team.
+                  </p>
+            </div>
+            <!-- /tercera columna-->
+            <!-- cuarta columna -->
+            <div class="col-md-3">
+                <div class="cat-img mb-4">
+                  <img class="d-block rounded-circle" src="/img/vehicle.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
+                </div>
+                
+                <h2 class="h4-responsive text-center">
+                    Vehicles
+                </h2>
+                <p class="text-center">
+                    The toughest vehicles for the harshest situations.
+                  </p>
+            </div>
+            <!-- /cuarta columna-->
+          </div>
+            <div class="row">
+                <button type="button" class="btn btn-light text-center" style="margin: auto;">See more</button>
+            </div>
 
+            <hr class="my-5" style="border-top: 1px solid rgba(255, 255, 255, 0.5);">
+
+
+      </section>
+      <!-- /product categories -->
+      <!-- about iberfix -->
+      <section class="mt-5 ml-5 mr-5" id="about-iberfix">
+        <!-- Heading -->
+        <h1 class="h1-responsive text-center wow fadeIn">About Iberfix</h1>
+        <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
+          <!-- primera fila -->
+          <div class="row mt-5 ml-5 mr-5">
+            <!-- primera columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            <div class="text-center">
+              <i class="fas fa-globe fa-7x"></i>
+            </div>
+            <p class="text-center h4-responsive mt-4">
+              200+ customers & suppliers around the globe
+            </p>
+
+            </div>
+            <!-- /primera columna-->
+            <!-- segunda columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            
+              <div class="text-center">
+                  <i class="far fa-handshake fa-7x"></i>
+              </div>
+              <p class="text-center h4-responsive mt-4">
+                100+ closed deals
+              </p>
+            </div>
+            <!-- /segunda columna-->
+            <!-- tercera columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            
+              <div class="text-center">
+                
+                <i class="far fa-address-book fa-7x"></i>
+              </div>
+              <p class="text-center h4-responsive mt-4">
+                Extensive reference contacts to provide confidence
+              </p>
+            </div>
+            <!-- /tercera columna-->
+          </div>
+          <!-- /primera fila -->
+          <!-- segunda fila -->
+          <div class="row mt-5 ml-5 mr-5">
+            <!-- primera columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            
+            <div class="text-center">
+                <i class="fas fa-home fa-7x"></i>
+            </div>
+            <p class="text-center h4-responsive mt-4">
+              Based in Uruguay, South America
+            </p>
+
+            </div>
+            <!-- /primera columna-->
+            <!-- segunda columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            
+              <div class="text-center">
+                <i class="far fa-chart-bar fa-7x"></i>
+              </div>
+              <p class="text-center h4-responsive mt-4">
+                More than 500 closed deals
+              </p>
   
-  <!-- <div id="main-content" class="no-padding"> -->
-    <!-- <img src="img/svosvehicles.jpg" alt="Picture of restaurant" class="img-responsive visible-xs w-100 main-image"> -->
-  <!-- </div> -->
-  <!-- End of #main-content -->
+            </div>
+            <!-- /segunda columna-->
+            <!-- tercera columna -->
+            <div class="col-md-4 mb-4 wow fadeInUp">
+            
+              <div class="text-center">
+                
+                <i class="far fa-address-book fa-7x"></i>
+              </div>
+              <p class="text-center h4-responsive mt-4">
+                Extensive reference contacts to ensure trust
+              </p>
+  
+            </div>
+            <!-- /tercera columna-->
+            
+          </div>
+          <!-- /segunda fila -->
+          <!-- tercera fila -->
+            <div class="row">
+                <button type="button" class="btn btn-light text-center" style="margin: auto;">Learn more</button>
+            </div>
+          <!-- /tercera fila -->
+            <hr class="my-5" style="border-top: 1px solid rgba(255, 255, 255, 0.5);">
 
+
+      </section>
+      <!-- /about iberfix -->
+
+
+    <!-- <div id="main-content" class="no-padding"> -->
+    <!-- <img src="img/svosvehicles.jpg" alt="Picture of restaurant" class="img-responsive visible-xs w-100 main-image"> -->
+    <!-- </div> -->
+    <!-- End of #main-content -->
 
   </main>
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019.
-    <a> Designed by F.A. & M.P.</a>
+
+  <footer class="page-footer font-small pt-4">
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-4 mb-4">
+
+  <!-- Grid row -->
+  <div class="row mt-3 black-text">
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+      <!-- Content -->
+      <h6 class="text-uppercase font-weight-bold white-text">Iberfix S.A.</h6>
+      <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p class="white-text">Providing top quality equipment for law and order enforcement since 1996.</p>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold white-text">Sitemap</h6>
+      <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <a class="white-text" href="#!">Home</a>
+      </p>
+      <p>
+        <a class="white-text" href="#!">Product categories</a>
+      </p>
+      <p>
+        <a class="white-text" href="#!">Customers</a>
+      </p>
+      <p>
+        <a class="white-text" href="#!">About Us</a>
+      </p>
+      <p>
+        <a class="white-text" href="#!">Contact Us</a>
+      </p>
+
+    </div>
+    <!-- Grid column -->
+
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+      <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p class="white-text"> 
+        <i class="fas fa-home mr-3 white-text"></i> Montevideo, CP 11500, Uruguay</p>
+      <p class="white-text">
+        <i class="fas fa-envelope mr-3 white-text"></i> iberfix@iberfix.com</p>
+      <p class="white-text">
+        <i class="fas fa-phone mr-3 white-text"></i> +598 26 00 82 45</p>
+      <p class="white-text">
+        <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 106</p>
+
+    </div>
+    <!-- Grid column -->
+
   </div>
-  <!-- Copyright -->
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+
+
+      <div class="footer-copyright text-center py-3"> © 2019.
+          <a href=""> Designed by F.A. & M.P.</a>
+      </div>
+  </footer>
 
 
   <!-- SCRIPTS -->

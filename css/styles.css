@@ -5,9 +5,27 @@
   .button-icon{
     float: right;
   }
+  #toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: auto;
+    padding-top: inherit;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    color: rgba(255,255,255, 0.8)
+  }
+  @media (max-width: 992px){
+    .navbar .nav-item .nav-link {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+  }
   .container #collapse-content{
     clear: right;
-    float: inherit;
+    float: inherit
 
 
   }
@@ -20,6 +38,10 @@
   }
 }
 
+#navbar-buttons-list{
+  padding-top: 0.5em;
+}
+
 .container .navbar-brand{
   margin: auto;
 }
@@ -27,11 +49,33 @@
 .navbar .navbar-toggler {
   border-width: 2px;
 }
-
+#navbutton{
+  color: white;
+}
+/* change navbar buttons text color when scroll */
 .top-nav-collapse #navbutton{
   color: rgb(97, 96, 96);
 }
+.top-nav-collapse .es-button{
+  background: white
+}
+.top-nav-collapse #toggler-icon, .top-nav-collapse #btton{
+  color: rgb(97, 96, 96, 0.9)
 
+}
+.top-nav-collapse #btton{
+    border-color: rgb(97,96,96,0.1)
+  }
+.es-button {
+  left: inherit;
+  min-width: 4.6rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  padding: 0;
+}
+.dropdown-menu.show{
+  display: inline-flex;
+}
 #header-nav .container{
   width: 90%;
 }
@@ -43,8 +87,8 @@
 }
 
 /*#header-nav {
-  padding: 0px 0px 0px 0px;
-  block-size: 80px;
+padding: 0px 0px 0px 0px;
+block-size: 80px;
 }*/
 
 .nav-item{
@@ -64,10 +108,30 @@
   margin: 0;
 }
 
-/* change navbar buttons color on hover */
+html {
+  scroll-behavior: smooth;
+}
 
+/* change navbar buttons color on hover */
+.top-nav-collapse #navbutton:hover{           /* solo toma efecto cuando esta collapsed */
+  background-color:rgba(163, 163, 163, 0.3) !important;
+}
 #navbutton:hover {
-    background-color:rgba(255, 255, 255, 0.1) !important;
+  background-color:rgba(255, 255, 255, 0.1) !important;
+}
+#navbutton:holder {
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  transition: .35;
+}
+#btton.show, button[aria-expanded="true"]{
+  background-color:rgba(255, 255, 255, 0.2) !important;
+}
+.top-nav-collapse #btton.show, button[aria-expanded="true"]{
+  background-color:rgba(163, 163, 163, 0.3) !important;
+
+}
+.dropdown-item:hover{
+  background-color: inherit;
 }
 
 /* Carousel */
@@ -80,17 +144,22 @@
   font-weight: 300;
 }
 
- /* Necessary for full page carousel*/
- html,
- body,
- main,
- .view {
-   height: 100%;
- }
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
 
+
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
 .carousel {
   height: 100%;
 }
+
 .carousel-item,
 .carousel-item.active {
   height: 100%;
@@ -99,24 +168,28 @@
   height: 100%;
 }
 
-
 .carousel-item:nth-child(1) {
-  background-image: url("/img/soldiers-snow.jpg");
+  background-image: url("/img/soldiers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
+
 }
 .carousel-item:nth-child(2) {
   background-image: url("/img/vera.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
+  
 }
 .carousel-item:nth-child(3) {
   background-image: url("/img/patriot.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  /*background-position: center center;*/
+  /*background-attachment: fixed;*/
 }
 
 /* Carousel image gradients */
@@ -138,4 +211,21 @@
   /*background: -ms-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* IE10+ */
   /*background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* W3C */
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* Product categories */
+
+#prod-cat {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.cat-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* page footer */
+.page-footer {
+  background-color: rgb(41, 41, 41);
 }

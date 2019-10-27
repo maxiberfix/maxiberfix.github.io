@@ -44,9 +44,6 @@ class = "view"
               <a id="navbutton" class="nav-link rounded" href="#products">Products</a>
             </li>
             <li class="nav-item">
-              <a id="navbutton" class="nav-link rounded" href="#customers">Customers</a>
-            </li>
-            <li class="nav-item">
               <a id="navbutton" class="nav-link rounded" href="#about"><span style="white-space: nowrap">About Us</span></a> <!-- Se agrega el span para que no haga line break -->
             </li>
             <li class="nav-item">
@@ -137,13 +134,13 @@ class = "view"
     <main id="home">
     
     <!-- product categories -->
-    <section class="mt-5" id="prod-cat">
+    <section class="mt-5" id="products">
         <!-- Heading -->
         <h1 class="h1-responsive text-center wow fadeInUp">Product categories</h1>
           <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
-          <div class="row mt-5 mb-5 ml-3 mr-3 wow fadeIn justify-content-center" style="flex-wrap: nowrap;">
+          <div class="row mt-5 mb-5 ml-3 mr-3 wow fadeIn justify-content-center"> <!--style="flex-wrap: nowrap;"-->
             <!-- primera columna -->
-            <div id="product-element" class="col-md-3 rounded-lg">
+            <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg">
                 <div class="cat-img mb-4">
                     <img class="d-block rounded-circle" src="/img/policia.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
                 </div>
@@ -157,7 +154,7 @@ class = "view"
             </div>
             <!-- /primera columna-->
             <!-- segunda columna -->
-            <div id="product-element" class="col-md-3 rounded-lg">
+            <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg">
                 <div class="cat-img mb-4">
                     <img class="d-block rounded-circle" src="/img/soldiers-city.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
                 </div>
@@ -169,8 +166,9 @@ class = "view"
                   </p>
             </div>
             <!-- /segunda columna-->
+
             <!-- tercera columna -->
-            <div id="product-element" class="col-md-3 rounded-lg">
+            <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg">
                 <div class="cat-img mb-4">
                     <img class="d-block rounded-circle" src="/img/biohazard.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
                 </div>
@@ -183,7 +181,7 @@ class = "view"
             </div>
             <!-- /tercera columna-->
             <!-- cuarta columna -->
-            <div id="product-element" class="col-md-3 rounded-lg">
+            <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg">
                 <div class="cat-img mb-4">
                   <img class="d-block rounded-circle" src="/img/vehicle.jpg" alt="First slide" width="200" height="200" style="margin: auto;">
                 </div>
@@ -197,6 +195,7 @@ class = "view"
             </div>
             <!-- /cuarta columna-->
           </div>
+          <!-- /primera fila -->
             <div class="row">
                 <button type="button" class="btn btn-light text-center" style="margin: auto;">See more</button>
             </div>
@@ -207,15 +206,15 @@ class = "view"
       </section>
       <!-- /product categories -->
       <!-- about iberfix -->
-      <section class="mt-5 ml-5 mr-5" id="about-iberfix">
+      <section class="mt-5 ml-2 mr-2" id="about">
         <!-- Heading -->
         <h1 class="h1-responsive text-center wow fadeIn">About Iberfix</h1>
         <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
           <!-- primera fila -->
           <div id="about-icon" class="rounded-lg wow zoomIn">
-          <div class="row mt-5 ml-5 mr-5">
+          <div class="row mt-5">
             <!-- primera columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+            <div class="col-lg-4 col-sm-6 mb-4 wow fadeInUp pl-5 pr-5">
             <div class="text-center">
               <i class="fas fa-globe fa-7x"></i>
             </div>
@@ -226,7 +225,7 @@ class = "view"
             </div>
             <!-- /primera columna-->
             <!-- segunda columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+            <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
             
               <div class="text-center">
                   <i class="far fa-handshake fa-7x"></i>
@@ -237,7 +236,7 @@ class = "view"
             </div>
             <!-- /segunda columna-->
             <!-- tercera columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+            <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
             
               <div class="text-center">
                 
@@ -248,12 +247,9 @@ class = "view"
               </p>
             </div>
             <!-- /tercera columna-->
-          </div>
-          <!-- /primera fila -->
-          <!-- segunda fila -->
-          <div class="row mt-5 ml-5 mr-5">
-            <!-- primera columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+
+            <!-- cuarta columna -->
+            <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
             
             <div class="text-center">
                 <i class="fas fa-home fa-7x"></i>
@@ -263,9 +259,9 @@ class = "view"
             </p>
 
             </div>
-            <!-- /primera columna-->
-            <!-- segunda columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+            <!-- /cuarta columna-->
+            <!-- quinta columna -->
+            <div class=" col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
             
               <div class="text-center">
                 <i class="far fa-chart-bar fa-7x"></i>
@@ -275,9 +271,9 @@ class = "view"
               </p>
   
             </div>
-            <!-- /segunda columna-->
-            <!-- tercera columna -->
-            <div class="col-md-4 mb-4 wow fadeInUp pl-5 pr-5">
+            <!-- /quinta columna-->
+            <!-- sexta columna -->
+            <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
             
               <div class="text-center">
                 
@@ -288,10 +284,10 @@ class = "view"
               </p>
   
             </div>
-            <!-- /tercera columna-->
+            <!-- /sexta columna-->
             
           </div>
-          <!-- /segunda fila -->
+          <!-- /primera fila -->
         </div>
           <!-- tercera fila -->
             <div class="row mt-5">

@@ -5,7 +5,7 @@ interval: 4000
 new WOW().init();
 
 // codigo adaptado de https://stackoverflow.com/questions/25369487/background-image-that-moves-when-you-scroll-down-the-page
-var velocity = 0.2;
+var velocity = 0.3;
 function update(){ 
 var pos = $(window).scrollTop(); 
 $('.carousel-item').each(function() { 

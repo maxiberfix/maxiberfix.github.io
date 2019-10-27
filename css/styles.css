@@ -239,9 +239,24 @@ body {
   margin: 10px 50px 10px 50px;
 }
 
+#contact-cont {
+  background-color:rgba(255, 255, 255, 0.055); 
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+}
+
 /* page footer */
 .page-footer {
   background-color: rgb(41, 41, 41);
 }
 
+/* esto es para que cuando hace scroll no haga "overshoot" */
+#products::before,
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+}
 

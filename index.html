@@ -16,10 +16,6 @@
   <!-- Your custom styles (optional) -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
-<!--
-class = "view"
-<div class="mask rgba-grey-strong"></div>
--->
 
 <body>
   <header>
@@ -27,7 +23,7 @@ class = "view"
     <nav id="header-nav" class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
       <div class="container">
         <!-- logo empresa -->
-        <a class="navbar-brand" href="#carousel-main">
+        <a class="navbar-brand" href="#main">
           <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
         </a>
         <!-- Collapse Button -->
@@ -41,46 +37,53 @@ class = "view"
           <!-- lista de botones -->
           <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
             <li class="nav-item">
-              <a id="navbutton" class="nav-link rounded" href="#carousel-main">Home</a>
+              <a id="nav_home" class="navbutton nav-link rounded" href="#main">Home</a>
             </li>
             <li class="nav-item">
-              <a id="navbutton" class="nav-link rounded" href="#products">Products</a>
+              <a id="nav_products" class="navbutton nav-link rounded" href="#products">Products</a>
             </li>
             <li class="nav-item">
-              <a id="navbutton" class="nav-link rounded" href="#about"><span style="white-space: nowrap">About
+              <a id="nav_about" class="navbutton nav-link rounded" href="#about"><span style="white-space: nowrap">About
                   Us</span></a> <!-- Se agrega el span para que no haga line break -->
             </li>
             <li class="nav-item">
-              <a id="navbutton" class="nav-link rounded" href="#contact">Contact</a>
+              <a id="nav_contact" class="navbutton nav-link rounded" href="#contact">Contact</a>
             </li>
             <li id="btton" class="nav-item">
-              <a id="navbutton" class="nav-link dropdown-toggle ml-auto waves-light rounded" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> En</a>
+              <div id="lang_button" data-lang="en"
+                class="navbutton nav-link dropdown-toggle ml-auto waves-light rounded" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span id="lang_en" class="flag-icon flag-icon-us"></span>
+                <!-- En -->
+              </div>
               <div class="es-button dropdown-menu rgba-white-slight">
-                <a id="navbutton" class="dropdown-item" href="#es">
-                  <span class="flag-icon flag-icon-es"></span>
-                  Es</a>
+                <a id="lang_button_2" class="navbutton dropdown-item" onclick="toggleLang()">
+                  <span id="lang_es" class="flag-icon flag-icon-es"></span>
+                  <!-- Es -->
+                </a>
+              </div>
             </li>
           </ul>
           <!-- </div> -->
           <!-- Links -->
         </div>
         <!-- Collapsible content -->
-
       </div>
     </nav>
     <!--/.Navbar-->
   </header>
 
   <!--Carousel Wrapper-->
-  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="true">
+  <div id="main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="true">
+
     <!--Indicators-->
     <ol class="carousel-indicators">
-      <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-main" data-slide-to="1"></li>
-      <li data-target="#carousel-main" data-slide-to="2"></li>
+      <li data-target="#main" data-slide-to="0" class="active"></li>
+      <li data-target="#main" data-slide-to="1"></li>
+      <li data-target="#main" data-slide-to="2"></li>
     </ol>
     <!--/.Indicators-->
+
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
@@ -91,8 +94,8 @@ class = "view"
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption wow fadeIn slower">
-          <h1 class="h1-responsive">Military forces equipment</h1>
-          <p style="font-size: 24px;">For the toughest situations</p>
+          <h1 id="carousel_1_header" class="h1-responsive">Military forces equipment</h1>
+          <p id="carousel_1_text" style="font-size: 24px;">For the toughest situations</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -105,8 +108,8 @@ class = "view"
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-          <h1 class="h1-responsive">Cutting-edge radar technology</h1>
-          <p style="font-size: 24px;">Everything under control</p>
+          <h1 id="carousel_2_header" class="h1-responsive">Cutting-edge radar technology</h1>
+          <p id="carousel_2_text" style="font-size: 24px;">Everything under control</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -118,58 +121,63 @@ class = "view"
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-          <h1 class="h1-responsive">Air-defense systems</h1>
-          <p style="font-size: 24px;">The most versatile options</p>
+          <h1 id="carousel_3_header" class="h1-responsive">Air-defense systems</h1>
+          <p id="carousel_3_text" style="font-size: 24px;">The most versatile options</p>
         </div>
       </div>
     </div>
     <!--/.Slides-->
+
     <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#main" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#main" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
     <!--/.Controls-->
+
   </div>
   <!--/.Carousel Wrapper-->
-  <main id="home">
+
+  <main>
 
     <!-- product categories -->
     <section class="mt-5" id="products">
+
       <!-- Heading -->
-      <h1 class="h1-responsive text-center wow fadeInUp">Product categories</h1>
+      <h1 id="product_header" class="h1-responsive text-center wow fadeInUp">Product categories</h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
       <div class="row mt-5 mb-5 ml-3 mr-3 justify-content-center">
-        <!--style="flex-wrap: nowrap;"-->
+
         <!-- primera columna -->
         <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg wow fadeIn">
           <div class="cat-img mb-4">
             <img class="d-block rounded-circle" src="/img/policia.jpg" alt="First slide" width="200" height="200"
               style="margin: auto;">
           </div>
-          <h2 class="h4-responsive text-center">
+          <h2 id="product_1_header" class="h4-responsive text-center">
             Public safety
           </h2>
-          <p class="text-center">
+          <p id="product_1_text" class="text-center">
             Equipment for law enforcement
             and high risk urban missions.
           </p>
         </div>
         <!-- /primera columna-->
+
         <!-- segunda columna -->
         <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg wow fadeIn">
           <div class="cat-img mb-4">
             <img class="d-block rounded-circle" src="/img/soldiers-city.jpg" alt="First slide" width="200" height="200"
               style="margin: auto;">
           </div>
-          <h2 class="h4-responsive text-center">
+          <h2 id="product_2_header" class="h4-responsive text-center">
             Military equipment
           </h2>
-          <p class="text-center">
+          <p id="product_2_text" class="text-center">
             Top-notch equipment for the toughest situations.
           </p>
         </div>
@@ -181,14 +189,15 @@ class = "view"
             <img class="d-block rounded-circle" src="/img/biohazard.jpg" alt="First slide" width="200" height="200"
               style="margin: auto;">
           </div>
-          <h2 class="h4-responsive text-center">
+          <h2 id="product_3_header" class="h4-responsive text-center">
             Biohazard control
           </h2>
-          <p class="text-center">
+          <p id="product_3_text" class="text-center">
             When life is at risk, you have to protect your team.
           </p>
         </div>
         <!-- /tercera columna-->
+
         <!-- cuarta columna -->
         <div id="product-element" class="col-md-5 col-sm-12 col-xl rounded-lg wow fadeIn">
           <div class="cat-img mb-4">
@@ -196,60 +205,66 @@ class = "view"
               style="margin: auto;">
           </div>
 
-          <h2 class="h4-responsive text-center">
+          <h2 id="product_4_header" class="h4-responsive text-center">
             Vehicles
           </h2>
-          <p class="text-center">
+          <p id="product_4_text" class="text-center">
             The toughest vehicles for the harshest situations.
           </p>
         </div>
         <!-- /cuarta columna-->
+
       </div>
       <!-- /primera fila -->
+
       <div class="row">
-        <button type="button" class="btn btn-light text-center" style="margin: auto;">See more</button>
+        <button id="product_button" type="button" class="btn btn-light text-center" style="margin: auto;">See
+          more</button>
       </div>
     </section>
     <!-- /product categories -->
+
     <hr class="my-5" style="border-top: 1px solid rgba(255, 255, 255, 0.5); width: 90%;">
+
     <!-- about iberfix -->
     <section class="mt-5 ml-2 mr-2" id="about">
+
       <!-- Heading -->
-      <h1 class="h1-responsive text-center wow fadeIn">About Iberfix</h1>
+      <h1 id="about_header" class="h1-responsive text-center wow fadeIn">About Iberfix</h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
+
       <!-- primera fila -->
       <div id="about-icon" class="rounded-lg wow zoomIn">
         <div class="row mt-5">
+
           <!-- primera columna -->
           <div class="col-lg-4 col-sm-6 mb-4 wow fadeInUp pl-5 pr-5">
             <div class="text-center">
               <i class="fas fa-globe fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h0" class="text-center h4-responsive mt-4">
               200+ customers & suppliers around the globe
             </p>
-
           </div>
           <!-- /primera columna-->
+
           <!-- segunda columna -->
           <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
-
             <div class="text-center">
               <i class="far fa-handshake fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h1" class="text-center h4-responsive mt-4">
               100+ closed deals
             </p>
           </div>
           <!-- /segunda columna-->
+
           <!-- tercera columna -->
           <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
-
             <div class="text-center">
-
               <i class="far fa-address-book fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h2" class="text-center h4-responsive mt-4">
               Extensive reference contacts to provide confidence
             </p>
           </div>
@@ -261,7 +276,7 @@ class = "view"
             <div class="text-center">
               <i class="fas fa-home fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h3" class="text-center h4-responsive mt-4">
               Based in Uruguay, South America
             </p>
 
@@ -273,7 +288,7 @@ class = "view"
             <div class="text-center">
               <i class="far fa-chart-bar fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h4" class="text-center h4-responsive mt-4">
               More than 500 closed deals
             </p>
 
@@ -286,7 +301,7 @@ class = "view"
 
               <i class="far fa-address-book fa-7x"></i>
             </div>
-            <p class="text-center h4-responsive mt-4">
+            <p id="about_h5" class="text-center h4-responsive mt-4">
               Extensive reference contacts to ensure trust
             </p>
 
@@ -298,7 +313,8 @@ class = "view"
       </div>
       <!-- segunda fila -->
       <div class="row mt-5">
-        <button type="button" class="btn btn-light text-center" style="margin: auto;">Learn more</button>
+        <button id="about_button" type="button" class="btn btn-light text-center" style="margin: auto;">Learn
+          more</button>
       </div>
       <!-- /segunda fila -->
     </section>
@@ -307,17 +323,85 @@ class = "view"
     <!-- contact us -->
     <section class="mt-5 ml-5 mr-5" id="contact">
       <!-- Heading -->
-      <h1 class="h1-responsive text-center">Contact Us</h1>
+      <h1 id="contact_header" class="h1-responsive text-center">Contact Us</h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
-      <h1 class="h4-responsive text-center">Don't hesitate to leave us a message. We will respond as soon as possible.</h1>
-      <div class="row mt-5 mb-5 ml-5 mr-5 justify-content-center rounded-lg" id="contact-cont">
-        <div class="col-8">
+      <h1 id="contact_text" class="h4-responsive text-center">Don't hesitate to leave us a message. We will respond as
+        soon as possible.</h1>
+      <div class="row justify-content-center rounded-lg">
 
+        <!--Grid column-->
+        <div class="col-md-12 col-lg-9 mb-md-0 mb-5 mt-5 mb-5 justify-content-center rounded-lg" id="contact-cont">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
+            <div class="row justify-content-center">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="name" class="form-control white-text"
+                    style="background-color:transparent;">
+                  <label for="name" class="">Full name</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="company" name="name" class="form-control white-text"
+                    style="background-color: transparent;">
+                  <label for="company" class="">Company/Organization</label>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control white-text">
+                  <label for="email" class="">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="subject" name="subject" class="form-control white-text">
+                  <label for="subject" class="">Subject</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="3"
+                    class="form-control md-textarea white-text"></textarea>
+                  <label for="message">Message</label>
+                </div>
+
+              </div>
+            </div>
+            <!--Grid row-->
+          </form>
         </div>
+        <!--Grid column-->
       </div>
       <div class="row mt-5">
-          <button type="button" class="btn btn-light text-center" style="margin: auto;">Send message</button>
-        </div>
+        <button id="contact_button" class="btn btn-light text-center" style="margin: auto;"
+          onclick="document.getElementById('contact-form').submit();">Send message</button>
+        <div class="status"></div>
+        <!--<button type="button" class="btn btn-light text-center" style="margin: auto;">Send message</button>-->
+      </div>
     </section>
     <!-- /contact us -->
 
@@ -341,7 +425,7 @@ class = "view"
           <p class="white-text">Providing top quality equipment for law and order enforcement since 1996.</p>
 
         </div>
-        <!-- Grid column -->
+        <!-- /Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -350,24 +434,20 @@ class = "view"
           <h6 class="text-uppercase font-weight-bold white-text">Sitemap</h6>
           <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="white-text" href="#!">Home</a>
+            <a class="white-text" href="#main">Home</a>
           </p>
           <p>
-            <a class="white-text" href="#!">Product categories</a>
+            <a class="white-text" href="#products">Product categories</a>
           </p>
           <p>
-            <a class="white-text" href="#!">Customers</a>
+            <a class="white-text" href="#about">About Us</a>
           </p>
           <p>
-            <a class="white-text" href="#!">About Us</a>
-          </p>
-          <p>
-            <a class="white-text" href="#!">Contact Us</a>
+            <a class="white-text" href="#contact">Contact Us</a>
           </p>
 
         </div>
-        <!-- Grid column -->
-
+        <!-- /Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -382,7 +462,7 @@ class = "view"
           <p class="white-text">
             <i class="fas fa-phone mr-3 white-text"></i> +598 26 00 82 45</p>
           <p class="white-text">
-            <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 106</p>
+            <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 107</p>
 
         </div>
         <!-- Grid column -->
@@ -397,7 +477,6 @@ class = "view"
       <a href=""> Designed by F.A. & M.P.</a>
     </div>
   </footer>
-
 
   <!-- SCRIPTS -->
   <!-- JQuery -->

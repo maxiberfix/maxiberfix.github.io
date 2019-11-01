@@ -1,0 +1,42 @@
+{
+
+	"nav_home": "Home",
+	"nav_products": "Products",
+	"nav_about": "About Us",
+	"nav_contact": "Contact",
+
+	"carousel_1_header": "Military forces equipment",
+	"carousel_1_text": "For the toughest situations",
+	"carousel_2_header": "State-of-the-art radar tech",
+	"carousel_2_text": "Everything under control",
+	"carousel_3_header": "Air-defense systems",
+	"carousel_3_text": "The most versatile options",
+	
+	"product_header": "Product categories",
+
+	"product_1_header": "Public safety",
+	"product_1_text": "Equipment for law enforcement and high risk urban missions.",
+	"product_2_header": "Military equipment",
+	"product_2_text": "Top-notch equipment for the toughest situations.",
+	"product_3_header": "Biohazard control",
+	"product_3_text": "Protect your team from the unseen.",
+	"product_4_header": "Vehicles",
+	"product_4_text": "For the harshest situations.",
+
+	"product_button": "See more",
+
+
+	"about_header": "About Us",
+	"about_h0": "200+ associates & clients around the globe",
+	"about_h1": "100+ closed deals",
+	"about_h2": "Extensive reference contacts to provide confidence",
+	"about_h3": "Based in Uruguay, South America",
+	"about_h4": "Bla bla bla",
+	"about_h5": "Extensive reference",
+	"about_button": "Learn more",
+
+	"contact_header": "Contact Us",
+	"contact_text": "Leave us a message. We'll never respond.",
+	"contact_button": "Send message"
+
+}

@@ -26,15 +26,12 @@
   .container #collapse-content{
     clear: right;
     float: inherit
-
-
   }
   .container .navbar-list{
     border-top: groove;
     flex-direction: row;
     float: inherit;
     place-content: space-evenly;
-
   }
 }
 
@@ -49,12 +46,12 @@
 .navbar .navbar-toggler {
   border-width: 2px;
 }
-#navbutton{
-  color: white;
+.navbutton{
+  color: white!important;
 }
 /* change navbar buttons text color when scroll */
-.top-nav-collapse #navbutton{
-  color: rgb(97, 96, 96);
+.top-nav-collapse .navbutton{
+  color: rgb(97, 96, 96)!important;
 }
 .top-nav-collapse .es-button{
   background: white
@@ -113,13 +110,13 @@ html {
 }
 
 /* change navbar buttons color on hover */
-.top-nav-collapse #navbutton:hover{           /* solo toma efecto cuando esta collapsed */
+.top-nav-collapse .navbutton:hover{           /* solo toma efecto cuando esta collapsed */
   background-color:rgba(163, 163, 163, 0.3) !important;
 }
-#navbutton:hover {
+.navbutton:hover {
   background-color:rgba(255, 255, 255, 0.1) !important;
 }
-#navbutton:holder {
+.navbutton:holder {
   background-color:rgba(255, 255, 255, 0.1) !important;
   transition: .35;
 }
@@ -172,7 +169,8 @@ body {
   background-image: url("/img/soldiers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-x: center;
+  background-position-y: top;
   /*background-attachment: fixed;*/
 
 }
@@ -180,7 +178,8 @@ body {
   background-image: url("/img/vera.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-x: center;
+  background-position-y: top;
   /*background-attachment: fixed;*/
   
 }
@@ -188,7 +187,8 @@ body {
   background-image: url("/img/patriot.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-x: center;
+  background-position-y: top;
   /*background-attachment: fixed;*/
 }
 
@@ -229,7 +229,6 @@ body {
   background-color:rgba(255, 255, 255, 0.055); 
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
-  
 }
 
 /* About iberfix */
@@ -245,6 +244,15 @@ body {
   margin: 5px 5px 5px 5px;
 }
 
+label.active {
+  color: white!important;
+}
+
+input, textarea {
+  border-bottom-color: white!important;
+  box-shadow:none!important;
+}
+
 /* page footer */
 .page-footer {
   background-color: rgb(41, 41, 41);
@@ -252,7 +260,8 @@ body {
 
 /* esto es para que cuando hace scroll no haga "overshoot" */
 #products::before,
-#about::before {
+#about::before,
+#contact::before {
   display: block;
   content: " ";
   margin-top: -80px;

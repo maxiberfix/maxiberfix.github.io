@@ -1,0 +1,42 @@
+{
+
+	"nav_home": "Inicio",
+	"nav_products": "Productos",
+	"nav_about": "Sobre Nosotros",
+	"nav_contact": "Contacto",
+
+	"carousel_1_header": "Equipamiento para fuerzas militares",
+	"carousel_1_text": "Para las condiciones mas difíciles",
+	"carousel_2_header": "Radares de última generación",
+	"carousel_2_text": "Todo bajo control",
+	"carousel_3_header": "Sistemas de defensa aérea",
+	"carousel_3_text": "Las opciones más versatiles",
+	
+	"product_header": "Categorías de Productos",
+
+	"product_1_header": "Seguridad Pública",
+	"product_1_text": "Equipamientos para fuerzas de la ley y misiones ubanas de gran riesgo.",
+	"product_2_header": "Equipamiento Militar",
+	"product_2_text": "Equipo del mejor nivel para situaciones difíciles.",
+	"product_3_header": "Control de riesgo biológico",
+	"product_3_text": "Protege a tus hombres de lo invisible.",
+	"product_4_header": "Vehículos",
+	"product_4_text": "Los mejores vehículos para las peores situaciones.",
+
+	"product_button": "Saber más",
+
+
+	"about_header": "Sobre Iberfix",
+	"about_h0": "200+ socios & clientes en el mundo",
+	"about_h1": "100+ tratos cerrados",
+	"about_h2": "Contactos de referencias para brindar confianza",
+	"about_h3": "Ubicado en Uruguay, Sud-América",
+	"about_h4": "Más de 500 tratos cerrados",
+	"about_h5": "Referencia extensiva de contactos para brindar confianza",
+	"about_button": "SABER MÁS",
+
+	"contact_header": "Contáctanos",
+	"contact_text": "Déjanos un mensaje. Nunca te responderemos.",
+	"contact_button": "Enviar"
+
+}

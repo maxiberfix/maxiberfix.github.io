@@ -17,13 +17,13 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="set_lang()">  <!-- cuando carga trae del json el contenido -->
   <header>
     <!--Navbar-->
     <nav id="header-nav" class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
       <div class="container">
         <!-- logo empresa -->
-        <a class="navbar-brand" href="#main">
+        <a class="navbar-brand" href="index.html">
           <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
         </a>
         <!-- Collapse Button -->
@@ -37,29 +37,29 @@
           <!-- lista de botones -->
           <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
             <li class="nav-item">
-              <a id="nav_home" class="navbutton nav-link rounded" href="#main">Home</a>
+              <a id="nav_home" class="navbutton nav-link rounded" href="#main"><!-- Home --></a>
             </li>
             <li class="nav-item">
-              <a id="nav_products" class="navbutton nav-link rounded" href="#products">Products</a>
+              <a id="nav_products" class="navbutton nav-link rounded" href="#products"><!-- Products --></a>
             </li>
             <li class="nav-item">
-              <a id="nav_about" class="navbutton nav-link rounded" href="#about"><span style="white-space: nowrap">About
-                  Us</span></a> <!-- Se agrega el span para que no haga line break -->
+              <a id="nav_about" class="navbutton nav-link rounded" href="#about"><span style="white-space: nowrap"><!-- About
+                  Us --></span></a> <!-- Se agrega el span para que no haga line break -->
             </li>
             <li class="nav-item">
-              <a id="nav_contact" class="navbutton nav-link rounded" href="#contact">Contact</a>
+              <a id="nav_contact" class="navbutton nav-link rounded" href="#contact"><!-- Contact --></a>
             </li>
             <li id="btton" class="nav-item">
-              <div id="lang_button" data-lang="en"
+              <div id="lang_button" data-lang="es"
                 class="navbutton nav-link dropdown-toggle ml-auto waves-light rounded" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span id="lang_en" class="flag-icon flag-icon-us"></span>
-                <!-- En -->
+                <span id="lang_es" class="flag-icon flag-icon-es"></span>
+                <!-- Es -->
               </div>
-              <div class="es-button dropdown-menu rgba-white-slight">
+              <div class="lang-button dropdown-menu rgba-white-slight rounded">
                 <a id="lang_button_2" class="navbutton dropdown-item" onclick="toggleLang()">
-                  <span id="lang_es" class="flag-icon flag-icon-es"></span>
-                  <!-- Es -->
+                  <span id="lang_en" class="flag-icon flag-icon-us"></span>
+                  <!-- En -->
                 </a>
               </div>
             </li>
@@ -94,8 +94,8 @@
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption wow fadeIn slower">
-          <h1 id="carousel_1_header" class="h1-responsive">Military forces equipment</h1>
-          <p id="carousel_1_text" style="font-size: 24px;">For the toughest situations</p>
+          <h1 id="carousel_1_header" class="h1-responsive"><!--Military forces equipment--></h1>
+          <p id="carousel_1_text" style="font-size: 24px;"><!--For the toughest situations--></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -108,8 +108,8 @@
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-          <h1 id="carousel_2_header" class="h1-responsive">Cutting-edge radar technology</h1>
-          <p id="carousel_2_text" style="font-size: 24px;">Everything under control</p>
+          <h1 id="carousel_2_header" class="h1-responsive"><!-- Cutting-edge radar technology --></h1>
+          <p id="carousel_2_text" style="font-size: 24px;"><!-- Everything under control --></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -121,8 +121,8 @@
             <div class="mask rgba-black-light"></div>-->
         </div>
         <div id="carousel-cap" class="carousel-caption">
-          <h1 id="carousel_3_header" class="h1-responsive">Air-defense systems</h1>
-          <p id="carousel_3_text" style="font-size: 24px;">The most versatile options</p>
+          <h1 id="carousel_3_header" class="h1-responsive"><!-- Air-defense systems --></h1>
+          <p id="carousel_3_text" style="font-size: 24px;"><!-- The most versatile options --></p>
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@
     <section class="mt-5" id="products">
 
       <!-- Heading -->
-      <h1 id="product_header" class="h1-responsive text-center wow fadeInUp">Product categories</h1>
+      <h1 id="product_header" class="h1-responsive text-center wow fadeInUp"><!-- Product categories --></h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
       <div class="row mt-5 mb-5 ml-3 mr-3 justify-content-center">
 
@@ -159,11 +159,11 @@
               style="margin: auto;">
           </div>
           <h2 id="product_1_header" class="h4-responsive text-center">
-            Public safety
+            <!-- Public safety -->
           </h2>
           <p id="product_1_text" class="text-center">
-            Equipment for law enforcement
-            and high risk urban missions.
+            <!-- Equipment for law enforcement
+            and high risk urban missions. -->
           </p>
         </div>
         <!-- /primera columna-->
@@ -175,10 +175,10 @@
               style="margin: auto;">
           </div>
           <h2 id="product_2_header" class="h4-responsive text-center">
-            Military equipment
+            <!-- Military equipment -->
           </h2>
           <p id="product_2_text" class="text-center">
-            Top-notch equipment for the toughest situations.
+            <!-- Top-notch equipment for the toughest situations. -->
           </p>
         </div>
         <!-- /segunda columna-->
@@ -190,10 +190,10 @@
               style="margin: auto;">
           </div>
           <h2 id="product_3_header" class="h4-responsive text-center">
-            Biohazard control
+            <!-- Biohazard control -->
           </h2>
           <p id="product_3_text" class="text-center">
-            When life is at risk, you have to protect your team.
+            <!-- When life is at risk, you have to protect your team. -->
           </p>
         </div>
         <!-- /tercera columna-->
@@ -206,21 +206,25 @@
           </div>
 
           <h2 id="product_4_header" class="h4-responsive text-center">
-            Vehicles
+            <!-- Vehicles -->
           </h2>
           <p id="product_4_text" class="text-center">
-            The toughest vehicles for the harshest situations.
+            <!-- The toughest vehicles for the harshest situations. -->
           </p>
         </div>
         <!-- /cuarta columna-->
 
       </div>
-      <!-- /primera fila -->
 
+      <h1 id="product_text" class="h4-responsive text-center"><!-- Don't hesitate to leave us a message. We will respond as
+        soon as possible. --></h1>
+      <!-- /primera fila -->
+      <!--
       <div class="row">
         <button id="product_button" type="button" class="btn btn-light text-center" style="margin: auto;">See
-          more</button>
+          more </button>
       </div>
+    -->
     </section>
     <!-- /product categories -->
 
@@ -230,7 +234,7 @@
     <section class="mt-5 ml-2 mr-2" id="about">
 
       <!-- Heading -->
-      <h1 id="about_header" class="h1-responsive text-center wow fadeIn">About Iberfix</h1>
+      <h1 id="about_header" class="h1-responsive text-center wow fadeIn"><!-- About Iberfix --></h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
 
       <!-- primera fila -->
@@ -243,7 +247,7 @@
               <i class="fas fa-globe fa-7x"></i>
             </div>
             <p id="about_h0" class="text-center h4-responsive mt-4">
-              200+ customers & suppliers around the globe
+             <!--  200+ customers & suppliers around the globe -->
             </p>
           </div>
           <!-- /primera columna-->
@@ -254,7 +258,7 @@
               <i class="far fa-handshake fa-7x"></i>
             </div>
             <p id="about_h1" class="text-center h4-responsive mt-4">
-              100+ closed deals
+              <!-- 100+ closed deals -->
             </p>
           </div>
           <!-- /segunda columna-->
@@ -265,7 +269,7 @@
               <i class="far fa-address-book fa-7x"></i>
             </div>
             <p id="about_h2" class="text-center h4-responsive mt-4">
-              Extensive reference contacts to provide confidence
+              <!-- Extensive reference contacts to provide confidence -->
             </p>
           </div>
           <!-- /tercera columna-->
@@ -277,7 +281,7 @@
               <i class="fas fa-home fa-7x"></i>
             </div>
             <p id="about_h3" class="text-center h4-responsive mt-4">
-              Based in Uruguay, South America
+              <!-- Based in Uruguay, South America -->
             </p>
 
           </div>
@@ -289,7 +293,7 @@
               <i class="far fa-chart-bar fa-7x"></i>
             </div>
             <p id="about_h4" class="text-center h4-responsive mt-4">
-              More than 500 closed deals
+              <!-- More than 500 closed deals -->
             </p>
 
           </div>
@@ -298,11 +302,10 @@
           <div class="col-lg-4 mb-4 col-sm-6 wow fadeInUp pl-5 pr-5">
 
             <div class="text-center">
-
-              <i class="far fa-address-book fa-7x"></i>
+                <i class="fas fa-link fa-7x"></i>
             </div>
             <p id="about_h5" class="text-center h4-responsive mt-4">
-              Extensive reference contacts to ensure trust
+              <!-- Extensive reference contacts to ensure trust -->
             </p>
 
           </div>
@@ -313,8 +316,10 @@
       </div>
       <!-- segunda fila -->
       <div class="row mt-5">
-        <button id="about_button" type="button" class="btn btn-light text-center" style="margin: auto;">Learn
-          more</button>
+        <form class = " text-center" style="margin: auto;">
+        <button id="about_button" onclick="send_lang('about.html')" type="reset" class="btn btn-light text-center" style="margin: auto;"><!-- Learn
+          more --></button>
+        </form>
       </div>
       <!-- /segunda fila -->
     </section>
@@ -323,15 +328,15 @@
     <!-- contact us -->
     <section class="mt-5 ml-5 mr-5" id="contact">
       <!-- Heading -->
-      <h1 id="contact_header" class="h1-responsive text-center">Contact Us</h1>
+      <h1 id="contact_header" class="h1-responsive text-center"><!-- Contact Us --></h1>
       <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
-      <h1 id="contact_text" class="h4-responsive text-center">Don't hesitate to leave us a message. We will respond as
-        soon as possible.</h1>
+      <h1 id="contact_text" class="h4-responsive text-center"><!-- Don't hesitate to leave us a message. We will respond as
+        soon as possible. --></h1>
       <div class="row justify-content-center rounded-lg">
 
         <!--Grid column-->
         <div class="col-md-12 col-lg-9 mb-md-0 mb-5 mt-5 mb-5 justify-content-center rounded-lg" id="contact-cont">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <form id="contact-form" name="contact-form" action="" method="POST">
 
             <!--Grid row-->
             <div class="row justify-content-center">
@@ -339,9 +344,9 @@
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="name" name="name" class="form-control white-text"
+                  <input type="text" id="name" name="name" class="bloque_texto form-control white-text"
                     style="background-color:transparent;">
-                  <label for="name" class="">Full name</label>
+                  <label id="contact_name" for="name" class=""><!-- Full name --></label>
                 </div>
               </div>
               <!--Grid column-->
@@ -349,9 +354,9 @@
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="company" name="name" class="form-control white-text"
+                  <input type="text" id="company" name="name" class="bloque_texto form-control white-text"
                     style="background-color: transparent;">
-                  <label for="company" class="">Company/Organization</label>
+                  <label id="contact_company" for="company" class=""><!-- Company/Organization --></label>
                 </div>
               </div>
               <!--Grid column-->
@@ -363,15 +368,15 @@
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="email" name="email" class="form-control white-text">
-                  <label for="email" class="">Email address</label>
+                  <input type="text" id="email" name="email" class="bloque_texto form-control white-text">
+                  <label id="contact_email" for="email" class=""><!-- Email address --></label>
                 </div>
               </div>
               <!--Grid column-->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control white-text">
-                  <label for="subject" class="">Subject</label>
+                  <input type="text" id="subject" name="subject" class="bloque_texto form-control white-text">
+                  <label id="contact_subject" for="subject" class=""><!-- Subject --></label>
                 </div>
               </div>
             </div>
@@ -385,8 +390,8 @@
 
                 <div class="md-form">
                   <textarea type="text" id="message" name="message" rows="3"
-                    class="form-control md-textarea white-text"></textarea>
-                  <label for="message">Message</label>
+                    class="bloque_texto form-control md-textarea white-text"></textarea>
+                  <label id="contact_message" for="message"><!-- Message --></label>
                 </div>
 
               </div>
@@ -397,8 +402,7 @@
         <!--Grid column-->
       </div>
       <div class="row mt-5">
-        <button id="contact_button" class="btn btn-light text-center" style="margin: auto;"
-          onclick="document.getElementById('contact-form').submit();">Send message</button>
+        <button id="contact_button" class="btn btn-light text-center" style="margin: auto;" onclick="sendEmail();"><!-- Send message --></button>
         <div class="status"></div>
         <!--<button type="button" class="btn btn-light text-center" style="margin: auto;">Send message</button>-->
       </div>
@@ -422,7 +426,7 @@
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold white-text">Iberfix S.A.</h6>
           <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="white-text">Providing top quality equipment for law and order enforcement since 1996.</p>
+          <p id="footer_desc" class="white-text"><!-- Providing top quality equipment for law and order enforcement since 1996. --></p>
 
         </div>
         <!-- /Grid column -->
@@ -431,19 +435,19 @@
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold white-text">Sitemap</h6>
+          <h6 id="footer_sitemap" class="text-uppercase font-weight-bold white-text"><!-- Sitemap --></h6>
           <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="white-text" href="#main">Home</a>
+            <a id="footer_home" class="white-text" href="#main"><!-- Home --></a>
           </p>
           <p>
-            <a class="white-text" href="#products">Product categories</a>
+            <a id="footer_categories" class="white-text" href="#products"><!-- Product categories --></a>
           </p>
           <p>
-            <a class="white-text" href="#about">About Us</a>
+            <a id="footer_about" class="white-text" href="#about"><!-- About Us --></a>
           </p>
           <p>
-            <a class="white-text" href="#contact">Contact Us</a>
+            <a id="footer_contact" class="white-text" href="#contact"><!-- Contact Us --></a>
           </p>
 
         </div>
@@ -453,16 +457,16 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+          <h6 id="footer_contact_section" class="text-uppercase font-weight-bold white-text"><!-- Contact --></h6>
           <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p class="white-text">
             <i class="fas fa-home mr-3 white-text"></i> Montevideo, CP 11500, Uruguay</p>
           <p class="white-text">
             <i class="fas fa-envelope mr-3 white-text"></i> iberfix@iberfix.com</p>
           <p class="white-text">
-            <i class="fas fa-phone mr-3 white-text"></i> +598 26 00 82 45</p>
+            <i class="fas fa-phone mr-3 white-text"></i> +598 26 00 82 45 ext. 106</p>
           <p class="white-text">
-            <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 107</p>
+            <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 108</p>
 
         </div>
         <!-- Grid column -->
@@ -489,6 +493,8 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Iberfix core JavaScript -->
   <script type="text/javascript" src="js/iberfix.js"></script>
+  <!-- SmptJS para enviar email -->
+  <script type="text/javascript" src="js/smtp.js"></script>
 </body>
 
 </html>

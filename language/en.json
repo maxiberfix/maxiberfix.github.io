@@ -22,21 +22,41 @@
 	"product_3_text": "Protect your team from the unseen.",
 	"product_4_header": "Vehicles",
 	"product_4_text": "For the harshest situations.",
+	"product_text":"These are some of the lineups we have worked with. If this isn't exactly what you're looking for, don't hesitate to contact us.",
+
 
 	"product_button": "See more",
 
 
 	"about_header": "About Us",
 	"about_h0": "200+ associates & clients around the globe",
-	"about_h1": "100+ closed deals",
+	"about_h1": "Collaboration with clients",
 	"about_h2": "Extensive reference contacts to provide confidence",
 	"about_h3": "Based in Uruguay, South America",
-	"about_h4": "Bla bla bla",
-	"about_h5": "Extensive reference",
+	"about_h4": "Numerous closed deals",
+	"about_h5": "Partnerships",
 	"about_button": "Learn more",
 
 	"contact_header": "Contact Us",
 	"contact_text": "Leave us a message. We'll never respond.",
-	"contact_button": "Send message"
+	"contact_name": "Full name",
+	"contact_company": "Company/Organization",
+	"contact_email": "E-mail address",
+	"contact_subject": "Subject",
+	"contact_message": "Message",
+	"contact_button": "Send message",
+
+	"footer_desc": "Providing top quality equipment for law and order enforcement since 1996.",
+	"footer_sitemap": "Sitemap",
+	"footer_home":"Home",
+	"footer_categories":"Products",
+	"footer_about":"About Us",
+	"footer_contact":"Contact",
+
+	"footer_contact_section":"Contact",
+
+	"about_section_header": "About Iberfix",
+	"about_page_text": "Iberfix S.A. represents well-known international companies in areas of Defense and Security, participating in the development and evolution of its operations in Uruguay and whole South America. Currently it is a provider for the Departments of Defense and Security in Uruguay.</br></br>It was established as a commercial business centered in services and materiales supply in the military and security field since the 2000s. The company began to evolve and using the gained experience it got into activities on design and engineering and giving consultancy services expanding to the areas of machinery, railroad industry, urban electric transport and explosive materials disarming.",
+	"about_page_img_descrip": "Emilio Palay, Iberfix CEO receiving an acknowledgement from the Czech government for his relentless labor to promote Czech companies and products in Uruguay and Argentina. October 2019."
 
 }

@@ -1,19 +1,15 @@
 {
-
 	"nav_home": "Inicio",
 	"nav_products": "Productos",
-	"nav_about": "Sobre Nosotros",
+	"nav_about": "Nosotros",
 	"nav_contact": "Contacto",
-
 	"carousel_1_header": "Equipamiento para fuerzas militares",
 	"carousel_1_text": "Para las condiciones mas difíciles",
 	"carousel_2_header": "Radares de última generación",
 	"carousel_2_text": "Todo bajo control",
 	"carousel_3_header": "Sistemas de defensa aérea",
 	"carousel_3_text": "Las opciones más versatiles",
-	
 	"product_header": "Categorías de Productos",
-
 	"product_1_header": "Seguridad Pública",
 	"product_1_text": "Equipamientos para fuerzas de la ley y misiones ubanas de gran riesgo.",
 	"product_2_header": "Equipamiento Militar",
@@ -22,21 +18,32 @@
 	"product_3_text": "Protege a tus hombres de lo invisible.",
 	"product_4_header": "Vehículos",
 	"product_4_text": "Los mejores vehículos para las peores situaciones.",
-
+	"product_text": "Estas son algunas categorías con las que hemos trabajado. Si no son exactamente lo que buscas, no dudes en contactarnos.",
 	"product_button": "Saber más",
-
-
 	"about_header": "Sobre Iberfix",
 	"about_h0": "200+ socios & clientes en el mundo",
-	"about_h1": "100+ tratos cerrados",
-	"about_h2": "Contactos de referencias para brindar confianza",
+	"about_h1": "Colaboración con el cliente",
+	"about_h2": "Contactos de referencia para brindar confianza",
 	"about_h3": "Ubicado en Uruguay, Sud-América",
-	"about_h4": "Más de 500 tratos cerrados",
-	"about_h5": "Referencia extensiva de contactos para brindar confianza",
+	"about_h4": "Numerosos tratos cerrados",
+	"about_h5": "Networking",
 	"about_button": "SABER MÁS",
-
 	"contact_header": "Contáctanos",
 	"contact_text": "Déjanos un mensaje. Nunca te responderemos.",
-	"contact_button": "Enviar"
-
+	"contact_name": "Nombre completo",
+	"contact_company": "Compañía/Organización",
+	"contact_email": "Dirección de e-mail",
+	"contact_subject": "Asunto",
+	"contact_message": "Mensaje",
+	"contact_button": "Enviar",
+	"footer_desc": "Equipando las fuerzas de seguridad desde 1996.",
+	"footer_sitemap": "Mapa del sitio",
+	"footer_home": "Inicio",
+	"footer_categories": "Productos",
+	"footer_about": "Nosotros",
+	"footer_contact": "Contacto",
+	"footer_contact_section": "Contacto",
+	"about_section_header": "Sobre Iberfix",
+	"about_page_text": "Iberfix S.A. representa y actúa en nombre de compañías Internacionales de renombre en el área de Defensa y Seguridad participando en el desarrollo de sus operaciones y negocios en Uruguay y en toda América del Sur. Actualmente es proveedor del Ministerio de Defensa y Ministerio del Interior en Uruguay.</br></br>Se estableció como una empresa comercial centrada en el suministro de materiales y servicios en el campo del material militar en el año 2000. La compañía comenzó a ganar gradualmente experiencias y expandir sus actividades en las áreas de diseño, ingeniería hasta el suministro de tecnologías para unidades de producción, consultoría y conocimientos en maquinaria, industria ferroviaria, transporte urbano eléctrico y existencias de materiales explosivos.",
+	"about_page_img_descrip": "Emilio Palay, CEO de Iberfix recibiendo un reconocimiento por parte del gobierno Checo en su embajada en la Republica Argentina en octubre de 2019"
 }

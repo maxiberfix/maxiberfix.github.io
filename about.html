@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Iberfix SA</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/about.css" rel="stylesheet">
+</head>
+
+<body onload="set_lang()">  <!-- cuando carga trae del json el contenido -->
+    <header>
+      <!--Navbar-->
+      <nav id="header-nav" class="navbar navbar-expand-md navbar-dark fixed-top scrolling-navbar mask rgba-white-slight">
+        <div class="container">
+          <!-- logo empresa -->
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" src="img/iberfix-logo.png" height="35" alt="iberfix logo">
+          </a>
+          <!-- Collapse Button -->
+          <button id="btton" class="waves-light navbar-toggler collapse-button button-icon" type="button"
+            data-toggle="collapse" data-target="#collapse-content" aria-controls="collapse-content" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span id="toggler-icon" class="fas fa-bars"></span>
+          </button>
+          <!-- Collapsibe content -->
+          <div class="collapse navbar-collapse" id="collapse-content">
+            <!-- lista de botones -->
+            <ul id="navbar-buttons-list" class="navbar-nav navbar-list ml-auto">
+              <li class="nav-item">
+                <a id="nav_home" class="navbutton nav-link rounded" onclick="send_lang('index.html','#main')"><!-- Home --></a>
+              </li>
+              <li class="nav-item">
+                <a id="nav_products" class="navbutton nav-link rounded" onclick="send_lang('index.html','#products')"><!-- Products --></a>
+              </li>
+              <li class="nav-item">
+                <a id="nav_about" class="navbutton nav-link rounded" onclick="send_lang('index.html','#about')"><span style="white-space: nowrap"><!-- About
+                    Us --></span></a> <!-- Se agrega el span para que no haga line break -->
+              </li>
+              <li class="nav-item">
+                <a id="nav_contact" class="navbutton nav-link rounded" onclick="send_lang('index.html','#contact')"><!-- Contact --></a>
+              </li>
+              <li id="btton" class="nav-item">
+                <div id="lang_button" data-lang="es"
+                  class="navbutton nav-link dropdown-toggle ml-auto waves-light rounded" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span id="lang_es" class="flag-icon flag-icon-es"></span>
+                  <!-- Es -->
+                </div>
+                <div class="lang-button dropdown-menu rgba-white-slight rounded">
+                  <a id="lang_button_2" class="navbutton dropdown-item" onclick="toggleLang()">
+                    <span id="lang_en" class="flag-icon flag-icon-us"></span>
+                    <!-- En -->
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <!-- </div> -->
+            <!-- Links -->
+          </div>
+          <!-- Collapsible content -->
+        </div>
+      </nav>
+      <!--/.Navbar-->
+    </header>
+  
+    <main class="view">
+        <div id="about" class="rounded-lg">
+    <!-- Heading -->
+    <h1 id="about_section_header" class="h1-responsive text-center wow fadeIn"><!-- About Iberfix --></h1>
+    <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.795); width: 200px;">
+    
+  
+    <!-- primera fila -->
+    <div id="about-icon" class="rounded-lg text-center">
+      <div class="row mt-5 text-justify wow fadeIn">
+          <div id="about_page_text" style="font-size: 20px;">
+            <!-- texto sobre iberfix -->
+          </div>
+      </div>
+      <div class="row mt-5 text-center">
+            <img id="about_img" src="/img/iberfix-about.jpg" class="rounded-lg text-center wow fadeIn" alt="CEO of Iberfix Emilio Palay in the ceremony." style="width:400px;margin:auto;">
+      </div>
+      <div id="about_page_img_descrip" style="font-size: 18px;">
+            
+      </div>
+      
+      <!-- /primera fila -->
+
+        </div>
+    </main>
+  
+    <footer class="page-footer font-small pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-4 mb-4">
+  
+        <!-- Grid row -->
+        <div class="row mt-3 black-text">
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+  
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold white-text">Iberfix S.A.</h6>
+            <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p id="footer_desc" class="white-text"><!-- Providing top quality equipment for law and order enforcement since 1996. --></p>
+  
+          </div>
+          <!-- /Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+            <!-- Links -->
+            <h6 id="footer_sitemap" class="text-uppercase font-weight-bold white-text"><!-- Sitemap --></h6>
+            <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a id="footer_home" class="white-text" onclick="send_lang('index.html','#main')"></a>
+            </p>
+            <p>
+              <a id="footer_categories" class="white-text" onclick="send_lang('index.html','#products')"></a>
+            </p>
+            <p>
+              <a id="footer_about" class="white-text" onclick="send_lang('index.html','#about')"></a>
+            </p>
+            <p>
+              <a id="footer_contact" class="white-text" onclick="send_lang('index.html','#contact')"></a>
+            </p>
+  
+          </div>
+          <!-- /Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+            <!-- Links -->
+            <h6 id="footer_contact_section" class="text-uppercase font-weight-bold white-text">Contact</h6>
+            <hr class="white accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p class="white-text">
+              <i class="fas fa-home mr-3 white-text"></i> Montevideo, CP 11500, Uruguay</p>
+            <p class="white-text">
+              <i class="fas fa-envelope mr-3 white-text"></i> iberfix@iberfix.com</p>
+            <p class="white-text">
+              <i class="fas fa-phone mr-3 white-text"></i> +598 26 00 82 45 ext. 106</p>
+            <p class="white-text">
+              <i class="fas fa-print mr-3 white-text"></i> +598 26 00 82 45 ext. 108</p>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row -->
+  
+      </div>
+      <!-- Footer Links -->
+  
+      <div class="footer-copyright text-center py-3"> © 2019.
+        <a href=""> Designed by F.A. & M.P.</a>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Iberfix core JavaScript -->
+    <script type="text/javascript" src="js/iberfix.js"></script>
+</body>
+
+</html>

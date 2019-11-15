@@ -17,16 +17,7 @@
     background-size: 100% 100%;
     color: rgba(255,255,255, 0.8)
   }
-  @media (max-width: 992px){
-    .navbar .nav-item .nav-link {
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-    }
-  }
-  .container #collapse-content{
-    clear: right;
-    float: inherit
-  }
+
   .container .navbar-list{
     border-top: groove;
     flex-direction: row;
@@ -34,6 +25,19 @@
     place-content: space-evenly;
   }
 }
+
+  @media (max-width: 992px){
+    .navbar .nav-item .nav-link {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+  }
+   .container #collapse-content{
+    clear: right;
+    float: inherit
+  }
+  
+
 
 #navbar-buttons-list{
   padding-top: 0.5em;
@@ -53,9 +57,7 @@
 .top-nav-collapse .navbutton{
   color: rgb(97, 96, 96)!important;
 }
-.top-nav-collapse .es-button{
-  background: white
-}
+
 .top-nav-collapse #toggler-icon, .top-nav-collapse #btton{
   color: rgb(97, 96, 96, 0.9)
 
@@ -63,13 +65,13 @@
 .top-nav-collapse #btton{
     border-color: rgb(97,96,96,0.1)
   }
-.es-button {
-  left: inherit;
-  min-width: 4.6rem;
-  text-align: center;
-  border-radius: 0.1rem;
-  padding: 0;
-}
+  .lang-button {
+    left: inherit;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 0.1rem;
+    padding: 0;
+  }
 .dropdown-menu.show{
   display: inline-flex;
 }
@@ -83,11 +85,27 @@
   float: right;
 }
 
+#btton .dropdown-menu{
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    margin-top: .125rem;
+  }
+
+#btton .dropdown-menu.show{
+  max-height: 300px;
+  opacity: 1;
+}
 /*#header-nav {
 padding: 0px 0px 0px 0px;
 block-size: 80px;
 }*/
-
 .nav-item{
   vertical-align: middle;
 }
@@ -113,6 +131,14 @@ html {
 .top-nav-collapse .navbutton:hover{           /* solo toma efecto cuando esta collapsed */
   background-color:rgba(163, 163, 163, 0.3) !important;
 }
+.top-nav-collapse #lang_button_2{
+  background-color: white;
+  transition: 0.25;
+}
+
+#lang_button[aria-expanded="true"]{
+  background-color: rgba(255,255,255,0.2);
+}
 .navbutton:hover {
   background-color:rgba(255, 255, 255, 0.1) !important;
 }
@@ -120,13 +146,13 @@ html {
   background-color:rgba(255, 255, 255, 0.1) !important;
   transition: .35;
 }
-#btton.show, button[aria-expanded="true"]{
+/* #btton.show, button[aria-expanded="true"]{
   background-color:rgba(255, 255, 255, 0.2) !important;
-}
+} */
 .top-nav-collapse #btton.show, button[aria-expanded="true"]{
   background-color:rgba(163, 163, 163, 0.3) !important;
-
 }
+.top-nav-collapse
 .dropdown-item:hover{
   background-color: inherit;
 }
@@ -181,7 +207,7 @@ body {
   background-position-x: center;
   background-position-y: top;
   /*background-attachment: fixed;*/
-  
+
 }
 .carousel-item:nth-child(3) {
   background-image: url("/img/patriot.jpg");
@@ -226,20 +252,20 @@ body {
 }
 
 #product-element {
-  background-color:rgba(255, 255, 255, 0.055); 
+  background-color:rgba(255, 255, 255, 0.055);
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
 }
 
 /* About iberfix */
 #about-icon {
-  background-color:rgba(255, 255, 255, 0.055); 
+  background-color:rgba(255, 255, 255, 0.055);
   padding: 10px 10px 10px 10px;
   margin: 10px 50px 10px 50px;
 }
 
 #contact-cont {
-  background-color:rgba(255, 255, 255, 0.055); 
+  background-color:rgba(255, 255, 255, 0.055);
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
 }
@@ -268,4 +294,3 @@ input, textarea {
   height: 80px;
   visibility: hidden;
 }
-

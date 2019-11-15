@@ -1,0 +1,210 @@
+.top-nav-collapse {
+  background-color: rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+  .button-icon{
+    float: right;
+  }
+  #toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: auto;
+    padding-top: inherit;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    color: rgba(255,255,255, 0.8)
+  }
+  .container .navbar-list{
+    border-top: groove;
+    flex-direction: row;
+    float: inherit;
+    place-content: space-evenly;
+  }
+  #about_page_text{
+    font-size: 15px!important;
+  }
+  #about {
+    background-color:rgba(255, 255, 255, 0.055);
+    padding: 2rem 2rem 2rem 2rem !important;
+    /*margin: 50px 50px 50px 50px;*/
+    margin-top: 5rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  #about_img{
+      width: 300px!important;
+  }
+  #about_page_img_descrip{
+    padding: .1rem 2rem .1rem 2rem !important;
+    font-size: 12px!important; 
+}
+}
+  @media (max-width: 992px){
+    .navbar .nav-item .nav-link {
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+  }
+  .container #collapse-content{
+    clear: right;
+    float: inherit
+  }
+
+
+#navbar-buttons-list{
+  padding-top: 0.5em;
+}
+
+.container .navbar-brand{
+  margin: auto;
+}
+
+.navbar .navbar-toggler {
+  border-width: 2px;
+}
+.navbutton{
+  color: white!important;
+}
+/* change navbar buttons text color when scroll */
+.top-nav-collapse .navbutton{
+  color: rgb(97, 96, 96)!important;
+}
+.top-nav-collapse .es-button{
+  background: white
+}
+.top-nav-collapse #toggler-icon, .top-nav-collapse #btton{
+  color: rgb(97, 96, 96, 0.9)
+
+}
+.top-nav-collapse #btton{
+    border-color: rgb(97,96,96,0.1)
+  }
+.lang-button {
+  left: inherit;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 0.1rem;
+  padding: 0;
+}
+.dropdown-menu.show{
+  display: inline-flex;
+}
+#header-nav .container{
+  width: 90%;
+}
+#collapse-content{
+  float: right;
+}
+#collapse-button{
+  float: right;
+}
+
+#btton .dropdown-menu{
+  -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    margin-top: .125rem;
+  }
+
+#btton .dropdown-menu.show{
+  max-height: 300px;
+  opacity: 1;
+}
+/*#header-nav {
+padding: 0px 0px 0px 0px;
+block-size: 80px;
+}*/
+
+.nav-item{
+  vertical-align: middle;
+}
+
+.navbar-list{
+  list-style-type: none; /* saco los puntos */
+  margin: 0;  /* reconfigurar los margenes y padding que estan por default en el navegador*/
+  padding: 0;
+  float: right;
+
+}
+
+/* change navbar buttons color on hover */
+.top-nav-collapse .navbutton:hover{           /* solo toma efecto cuando esta collapsed */
+  background-color:rgba(163, 163, 163, 0.3) !important;
+}
+.top-nav-collapse #lang_button_2{
+  background-color: white;
+  transition: 0.25;
+}
+.navbutton:hover {
+  background-color:rgba(255, 255, 255, 0.1) !important;
+}
+.navbutton:holder {
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  transition: .35;
+}
+#lang_button[aria-expanded="true"]{
+  background-color:rgba(255, 255, 255, 0.2) !important;
+}
+.top-nav-collapse #btton.show, button[aria-expanded="true"]{
+  background-color:rgba(163, 163, 163, 0.3) !important;
+
+}
+.dropdown-item:hover{
+  background-color: inherit;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  /*height: 100%;*/
+}
+
+
+
+
+#contact-cont {
+  background-color:rgba(255, 255, 255, 0.055);
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+label.active {
+  color: white!important;
+}
+
+input, textarea {
+  border-bottom-color: white!important;
+  box-shadow:none!important;
+}
+
+/* page footer */
+.page-footer {
+  background-color: rgb(41, 41, 41);
+}
+
+
+
+#about_page_img_descrip{
+    padding:2rem 20rem 1rem 20rem;
+}
+
+#about {
+    background-color:rgba(255, 255, 255, 0.055);
+    padding: 4rem 4rem 4rem 4rem;
+    /*margin: 50px 50px 50px 50px;*/
+    margin-top: 9rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  
+  }
